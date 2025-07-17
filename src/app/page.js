@@ -1,5 +1,4 @@
-"use client"; // Mark as Client Component
-
+"use client"; 
 import axios from 'axios';
 import { useState } from 'react';
 
@@ -18,7 +17,7 @@ export default function LoginForm() {
       password,
     });
 
-    setMessage(response.data.message); // Login successful
+    setMessage(response.data.message); 
     console.log(response.data);
   } catch (error) {
     const backendMsg = error.response?.data?.message;
@@ -27,25 +26,12 @@ export default function LoginForm() {
   }
 };
 
-
   return (
     <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        placeholder="Username"
-        value={username}
-        onChange={(e) => setUsername(e.target.value)}
-        required
-      />
-      <input
-        type="password"
-        placeholder="Password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        required
-      />
+      <input type="text" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} required />
+      <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}required/>
       <button type="submit">Login</button>
-      {message && <p>{message}</p>}
+      {/* {message && <p>{message}</p>} */}
     </form>
   );
 }
