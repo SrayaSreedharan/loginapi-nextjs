@@ -1,4 +1,4 @@
-# Next.js Login Form with Tailwind CSS and API Authentication
+# Next.js Login with API Authentication
 
 This is a simple login form built using **Next.js**, **Tailwind CSS**, and **Axios**, with a mock backend API route for user authentication.
 
