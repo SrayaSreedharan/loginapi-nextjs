@@ -1,5 +1,4 @@
-    // app/api/auth/login/route.js
-    export async function POST(request) {
+ export async function POST(request) {
       try {
         const { username, password } = await request.json();
 
