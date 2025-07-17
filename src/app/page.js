@@ -33,17 +33,6 @@ export default function LoginForm() {
         <button type="submit" className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-200">
           Login
         </button>
-        {message && (
-          <p
-            className={`text-center text-sm ${
-              message === "Login successful"
-                ? "text-green-600"
-                : "text-red-600"
-            }`}
-          >
-            {message}
-          </p>
-        )}
       </form>
     </div>
   );
