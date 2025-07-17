@@ -2,9 +2,9 @@
       try {
         const { username, password } = await request.json();
 
-        if (username === "user" && password === "password") { 
+        if (username === "sraya" && password === "password") { 
           return new Response(JSON.stringify({ message: "Login successful" }), { status: 200 });
-          
+
         } else {
           return new Response(JSON.stringify({ message: "Invalid credentials" }), { status: 401 });
         }
