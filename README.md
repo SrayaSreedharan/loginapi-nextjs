@@ -18,3 +18,10 @@ This is a simple login form built using **Next.js**, **Tailwind CSS**, and **Axi
 
 git clone https://github.com/srayasreedharan/nextjs-login-form.git
 cd nextjs-login-form
+
+## 2. Install dependencies
+
+npm install
+
+
+
