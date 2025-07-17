@@ -33,6 +33,7 @@ export default function LoginForm() {
         <button type="submit" className="w-full bg-black text-white py-2 rounded-lg">
           Login
         </button>
+        <p className='text-green-500'>{message}</p>
       </form>
     </div>
   );
