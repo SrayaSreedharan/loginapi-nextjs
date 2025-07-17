@@ -3,10 +3,7 @@
       try {
         const { username, password } = await request.json();
 
-        // Implement your authentication logic here
-        // (e.g., validate credentials against a database or external API)
-        if (username === "user" && password === "password") { // Placeholder
-          // In a real application, you would create a session, issue a token, etc.
+        if (username === "user" && password === "password") { 
           return new Response(JSON.stringify({ message: "Login successful" }), { status: 200 });
         } else {
           return new Response(JSON.stringify({ message: "Invalid credentials" }), { status: 401 });
