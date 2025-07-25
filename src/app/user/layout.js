@@ -1,13 +1,13 @@
-import Header from "../user/component/Header";
-import Footer from "../user/component/Footer";
-
+import React from 'react'
+import UserHeader from '../component/UserHeader';
+import UserFooter from '../component/UserFooter';
 
 export default function UserLayout({ children }) {
   return (
-    <div className="min-h-screen bg-white">
-     <Header/>
+    <>
+     <UserHeader/>
         <main className="p-6">{children}</main>
-    <Footer/>
-    </div>
+    <UserFooter/>
+    </>
   );
 }
